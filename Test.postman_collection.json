@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "0b7ac715-c0cc-4cf6-9750-d41fa1801ee8",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Message",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"message\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/message",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"message"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Counter Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/message/617d52f9ac41968e55221df6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"message",
+						"617d52f9ac41968e55221df6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get message",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/message/617d52f9ac41968e55221df6",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"message",
+						"617d52f9ac41968e55221df6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get list of messages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/messages/10/0",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"messages",
+						"10",
+						"0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
